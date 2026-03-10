@@ -1,0 +1,99 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    font-family: "Google Sans", sans-serif;
+}
+
+header {
+    padding: 2em 2em 1em;
+    background-color: rgb(39, 112, 112);
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    padding: 0.4em 0em;
+    background-color: rgb(39, 112, 112);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19%;
+    margin: 0.1em;
+    padding: 0.1em;
+    background-color: rgb(65, 146, 146);
+    transition: 0.5s;
+    border-radius: 1em;
+}
+nav a:hover {
+    background-color: rgb(235, 175, 64);
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding: 5vh 0;
+    margin: 5vh 5vw;
+    background-color: rgb(231, 238, 237);
+    border: none;
+}
+#login h1 {
+    width: 25%;
+    font-style: italic;
+}
+#login form {
+    width: 25%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#passwrd-label {
+    margin-top: 1em;
+}
+#login input {
+    padding: 0.25em;
+}
+#login button {
+    margin-top: 1em;
+    height: 3em;
+    background-color: rgb(39, 112, 112);
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+#login button:hover {
+    background-color: rgb(235, 175, 64);
+    color: #222222;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    color: white;
+    background-color: rgb(39, 112, 112);
+}
+footer a {
+    color: rgb(235, 175, 64);
+    text-decoration: none;
+}
+footer a:hover {
+    color: white;
+}
+
+@media (width >= 400px) {
+
+}
