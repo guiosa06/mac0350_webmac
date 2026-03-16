@@ -1,6 +1,6 @@
-* { 
-    padding: 0; 
-    margin: 0; 
+* {
+    padding: 0;
+    margin: 0;
     font-family: "Google Sans", sans-serif;
 }
 
@@ -11,54 +11,64 @@ header {
 
 nav {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 0.4em 0em;
     background-color: rgb(39, 112, 112);
 }
+
 nav a {
     color: white;
     text-decoration: none;
 
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 19%;
     margin: 0.1em;
-    padding: 0.1em;
+    padding: 0em 0.5em;
     background-color: rgb(65, 146, 146);
     transition: 0.5s;
     border-radius: 1em;
 }
+
 nav a:hover {
     background-color: rgb(235, 175, 64);
 }
+
+
 
 #login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
+    width: 100%;
     padding: 5vh 0;
-    margin: 5vh 5vw;
-    background-color: rgb(231, 238, 237);
+    margin-top: 5vh;
     border: none;
 }
+
 #login h1 {
-    width: 25%;
+    text-align: center;
+    width: 40%;
     font-style: italic;
 }
+
 #login form {
     width: 25%;
     margin-top: 2em;
     display: flex;
     flex-direction: column;
 }
+
 #passwrd-label {
     margin-top: 1em;
 }
+
 #login input {
     padding: 0.25em;
 }
+
 #login button {
     margin-top: 1em;
     height: 3em;
@@ -68,11 +78,14 @@ nav a:hover {
     border-radius: 0.5em;
     transition: 0.5s;
 }
+
 #login button:hover {
     background-color: rgb(235, 175, 64);
     color: #222222;
 
 }
+
+
 
 footer {
     display: flex;
@@ -80,20 +93,45 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 3vh 0vw;
     align-items: center;
     color: white;
     background-color: rgb(39, 112, 112);
+    text-align: center;
 }
+
 footer a {
     color: rgb(235, 175, 64);
     text-decoration: none;
 }
+
 footer a:hover {
     color: white;
 }
 
-@media (width >= 400px) {
 
+
+@media (width <=500px) {
+    header {
+        padding: 5vw 5vw 1vw;
+    }
+
+    header img {
+        width: 90vw;
+    }
+
+    nav {
+        font-size: small;
+    }
+
+    #login h1 {
+        width: 90%;
+    }
+
+    #login form {
+        width: 50%;
+    }
+    footer {
+        font-size: small;
+    }
 }
