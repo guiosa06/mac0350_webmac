@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="alternarLuz()">A luz está APAGADA</button>
+
+    <script>
+        function alternarLuz() {
+            let btn = document.querySelector("button");
+            let body = document.querySelector("body");
+            if(btn.innerText === "A luz está APAGADA") {
+                btn.innerText = "A luz está ACESA";
+                body.style.backgroundColor = "white";
+            }
+            else {
+                btn.innerText = "A luz está APAGADA";
+                body.style.backgroundColor = "black";
+            }
+        }
+    </script>
+</body>
+</html>

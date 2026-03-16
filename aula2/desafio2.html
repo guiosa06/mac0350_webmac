@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2</h1>
+    <button onclick="dobrar()">Dobrar</button>
+
+    <script>
+        let valor = 2;
+        const h1 = document.querySelector("h1");
+        function dobrar() {
+            valor = valor*2;
+            h1.innerText = valor;
+
+            if(valor>100) {
+                alert(`Cuidado, o número ${valor} está ficando muito grande!`);
+            }
+        }
+    </script>
+</body>
+</html>
