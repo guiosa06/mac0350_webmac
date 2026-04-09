@@ -1,0 +1,19 @@
+<button class="big-button" hx-get="/game" 
+        hx-target="main" 
+        hx-trigger="click" 
+        hx-swap="innerHTML">Play</button>
+<button class="big-button" hx-get="/ranking/?index=0" 
+        hx-target="main" 
+        hx-trigger="click" 
+        hx-swap="innerHTML">Ranking</button>
+<button class="big-button" hx-get="/change_color" 
+        hx-target="main" 
+        hx-trigger="click" 
+        hx-swap="innerHTML">Change color</button>
+<button class="big-button"
+        hx-delete="/menu"
+        hx-target="main"
+        hx-trigger="click"
+        hx-swap="innerHTML">Logout</button>
+
+<div id="aux" class="{{game_color}}"></div>

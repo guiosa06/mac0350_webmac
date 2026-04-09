@@ -1,0 +1,12 @@
+<form id="login-form" hx-post="/login"
+            hx-target="main"
+            hx-swap="innerHTML">
+    <input type="text" id="nome" placeholder="username" name="username">
+    <input type="password" id="senha" placeholder="password" name="pswd">
+    <button class="big-button"
+            type="submit">Enter</button>
+</form>
+<button hx-get="/register" 
+        hx-target="main" 
+        hx-trigger="click" 
+        hx-swap="innerHTML">Create new user</button>

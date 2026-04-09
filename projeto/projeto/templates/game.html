@@ -1,0 +1,27 @@
+<div id="above-board">
+    <div id="user-div">
+        {{username}}
+    </div>
+    <div id="score-div">score: <span id="score">0</span></div>
+</div>
+<div id="board">
+</div>
+<div class="pop-up-screen" id="start-screen">
+    - Press 'enter' to start -
+</div>
+<div class="pop-up-screen" id="game-over-screen">
+    Game Over :/
+    <br> - Press 'enter' to try again -
+</div>
+<div class="pop-up-screen" id="win-screen">
+    Wow! You win :)
+    <br> - Press 'enter' to play again -
+</div>
+
+<div id="below-board">
+    <button id="menu" hx-get="/menu" hx-target="main" hx-trigger="click" hx-swap="innerHTML">
+        menu
+    </button>
+</div>
+
+<div id="aux" class="{{game_color}}"></div>

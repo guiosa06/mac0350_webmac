@@ -1,0 +1,26 @@
+<div id="ranking-header">Best scores</div>
+<div id="ranking-table">
+
+    {% for game in games %}
+    <div class="entry">
+        <div>{{ game.player.username }}</div>
+        <div>{{ game.score }}</div>
+        <button hx-delete="/ranking/?index={{index}}&username={{ game.player.username }}&score={{ game.score }}"> - </button>
+    </div>
+    {% else %}
+    <div>No scores saved</div>
+    {% endfor %}
+
+</div>
+
+<div id="below-ranking">
+    <button hx-get="/game" hx-target="main" hx-trigger="click" hx-swap="innerHTML" hx-credentials="true">
+        Go back
+    </button>
+    <div>
+        <button hx-get="/ranking/?index={{ index - 1 }}">previous</button>
+        <button hx-get="/ranking/?index={{ index + 1 }}">next</button>
+    </div>
+</div>
+
+<div id="aux" class="{{game_color}}"></div>

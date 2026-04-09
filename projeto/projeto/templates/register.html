@@ -1,0 +1,41 @@
+<form id="register-form" hx-post="\register"
+            hx-target="main"
+            hx-swap="innerHTML">
+    <input type="text" id="new_username" placeholder="create a username" name="new_username">
+    <input type="password" id="new_pswd" placeholder="create a password" name="new_pswd">
+
+    <div id="radio-container">
+        <label class="color-radio">
+            <input type="radio" id="purple" name="game_color" value="purple" checked />
+            Purple
+        </label>
+        <label class="color-radio">
+            <input type="radio" id="orange" name="game_color" value="orange" />
+            Orange
+        </label>
+        <label class="color-radio">
+            <input type="radio" id="blue" name="game_color" value="blue" />
+            Blue
+        </label>
+        <label class="color-radio">
+            <input type="radio" id="red" name="game_color" value="red" />
+            Red
+        </label>
+        <label class="color-radio">
+            <input type="radio" id="green" name="game_color" value="green" />
+            green
+        </label>
+        <label class="color-radio">
+            <input type="radio" id="pink" name="game_color" value="pink" />
+            pink
+        </label>
+    </div>
+
+    <button class="big-button" type="submit">Register</button>
+</form>
+<button hx-get="/login" 
+        hx-target="main" 
+        hx-trigger="click" 
+        hx-swap="innerHTML">
+    Cancel
+</button>
