@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+}
+
+.selected_tab {
+    background-color: yellow;
+}
+
+header {
+    padding: 2em 2em 1em;
+    background-color: rgb(39, 112, 112);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.4em 0em;
+    background-color: rgb(39, 112, 112);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em;
+    padding: 0em 0.5em;
+    background-color: rgb(65, 146, 146);
+    transition: 0.5s;
+    border-radius: 1em;
+}
+
+nav a:hover {
+    background-color: rgb(235, 175, 64);
+}
+
+
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5vh 0;
+    margin-top: 5vh;
+    border: none;
+}
+
+#login h1 {
+    text-align: center;
+    width: 40%;
+    font-style: italic;
+}
+
+#login form {
+    width: 25%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#passwrd-label {
+    margin-top: 1em;
+}
+
+#login input {
+    padding: 0.25em;
+}
+
+#login button {
+    margin-top: 1em;
+    height: 3em;
+    background-color: rgb(39, 112, 112);
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    transition: 0.5s;
+}
+
+#login button:hover {
+    background-color: rgb(235, 175, 64);
+    color: #222222;
+
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 3vh 0vw;
+    align-items: center;
+    color: white;
+    background-color: rgb(39, 112, 112);
+    text-align: center;
+}
+
+footer a {
+    color: rgb(235, 175, 64);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+
+a {
+    color: rgb(161, 194, 221);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+hr {
+    height: 2px;
+    background-color: rgb(130, 138, 145);
+    border: none;
+    margin-bottom: 2vh;
+}
+
+ul {
+    margin: 1em;
+}
+li {
+    margin: 0.5em;
+}
+
+
+
+#kelly_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#kelly {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#kelly_header nav {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    font-size: 1.2em;
+}
+
+#kelly_header nav a {
+    padding: 0 1vw;
+}
+
+
+
+#hey_container {
+    display: flex;
+}
+
+#picture {
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#picture img {
+    width: 20em;
+    border-radius: 8px;
+}
+
+#description {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact {
+    font-size: smaller
+}
+
+#interests {
+    padding: 2vw;
+}
+
+#interests_container {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.interest {
+    background-color: rgb(56, 99, 141);
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5em;
+    margin: 0.1em;
+    transition: 0.5s;
+}
+
+.interest:hover {
+    font-weight: bolder;
+    background-color: orangered;
+}
+
+
+

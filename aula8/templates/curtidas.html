@@ -1,0 +1,22 @@
+<div id="tabs">
+    <button class="selected_tab" hx-get="/curtidas" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Curtidas
+    </button>
+    <button hx-get="/jupyter" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Jupyter
+    </button>
+    <button hx-get="/professor" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Professor
+    </button>
+</div>
+
+<div>Curtidas: <span id="total_curtidas">0</span></div>
+<button hx-post="/curtir" hx-trigger="click" hx-target="#total_curtidas" hx-swap="innerHTML">
+    Curtir!
+</button>
+<button hx-delete="/curtir" hx-trigger="click" hx-target="#total_curtidas" hx-swap="innerHTML"
+    hx-confirm="Você está prestes a resetar as curtidas">Clear</button>
+
+<div hx-get="/jupyter"
+     hx-trigger="keyup[ctrlKey&&altKey&&shiftKey&&(key=='p'||key=='P')] from:body">
+</div>

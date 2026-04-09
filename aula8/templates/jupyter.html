@@ -1,0 +1,54 @@
+<div id="tabs">
+    <button hx-get="/curtidas" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Curtidas
+    </button>
+    <button class="selected_tab" hx-get="/jupyter" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Jupyter
+    </button>
+    <button hx-get="/professor" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Professor
+    </button>
+</div>
+
+<header>
+    <a href="https://www5.usp.br/"><img src="https://www5.usp.br/wp-content/uploads/usp-2018.png?x52799"
+            alt="logo usp"></a>
+</header>
+<nav>
+    <a href="">
+        <div>Calendário Escolar</div>
+    </a>
+    <a href="">
+        <div>Cursos de Ingresso</div>
+    </a>
+    <a href="">
+        <div>Disciplina</div>
+    </a>
+    <a href="">
+        <div>Editais</div>
+    </a>
+    <a href="">
+        <div>FAQ</div>
+    </a>
+</nav>
+<div id="login">
+    <h1>Bem vindo ao Jupiterweb!</h1>
+    <form action="">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario">
+        <label for="senha" id="passwrd-label">Senha</label>
+        <input type="password" id="senha">
+        <button>Entrar</button>
+    </form>
+</div>
+
+
+
+<footer>
+    <div><a href="">Créditos</a> | <a href="">Fale Conosco</a></div>
+    <div>© 1999 - 2026 - Superintendência de Tecnologia da Informação/USP</div>
+</footer>
+
+<div hx-get="/professor"
+     hx-trigger="keyup[ctrlKey&&altKey&&shiftKey&&(key=='p'||key=='P')] from:body">
+</div>

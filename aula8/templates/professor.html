@@ -1,0 +1,69 @@
+<div id="tabs">
+    <button hx-get="/curtidas" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Curtidas
+    </button>
+    <button hx-get="/jupyter" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Jupyter
+    </button>
+    <button class="selected_tab" hx-get="/professor" hx-trigger="click" hx-target="main" hx-push-url="true">
+        Professor
+    </button>
+</div>
+
+
+<header id="kelly_header">
+    <div id="kelly">
+        <a href="index.html">Kelly's Homepage</a>
+    </div>
+    <nav>
+        <a href="education.html">Education</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="publications.html">Publications</a>
+    </nav>
+</header>
+
+<hr>
+<div id="hey_container">
+    <div id="picture">
+        <img src="https://i1.rgstatic.net/ii/profile.image/272307184730122-1441934500283_Q512/Kelly-Rosa-Braghetto.jpg"
+            alt="">
+    </div>
+    <div id="description">
+        <h1>Kelly Rosa Braghetto</h1>
+        <p> <br>
+            Assistant Professor<br>
+            <a href="https://www.ime.usp.br/dcc/index-english.php">Department of Computer Science</a><br>
+            <a href="https://www.ime.usp.br/">Institute of Mathematics and Statistics</a><br>
+            <a href="https://www5.usp.br/">University of São Paulo</a>
+        </p>
+        <p id="contact">
+            <br>
+            Office: IME/USP room C-224
+            <br>
+            Tel.: +55 11 3091-0750
+            <br>
+            Fax: +55 11 3091-6134
+            <br>
+            Email: <a href="mailto:kellyrb@ime.usp.br">kellyrb@ime.usp.br</a><br>
+            <a href="http://lattes.cnpq.br/5416099300504556">Lattes Curriculum</a>
+        </p>
+
+    </div>
+</div>
+<div id="interests">
+    <h2>
+        Research Interests
+    </h2>
+    <div id="interests_container">
+        <span class="interest">Databases</span>
+        <span class="interest">Workflow Management</span>
+        <span class="interest">Business Process Management</span>
+        <span class="interest">Formal Methods and Models for System Design
+            and Analysis</span>
+        <span class="interest">Performance Evaluation via Analytical Modeling</span>
+    </div>
+</div>
+
+<div hx-get="/curtidas"
+     hx-trigger="keyup[ctrlKey&&altKey&&shiftKey&&(key=='p'||key=='P')] from:body">
+</div>
